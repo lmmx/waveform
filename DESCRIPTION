@@ -1,0 +1,32 @@
+Package: waveform
+Type: Package
+Title: A set of R-scripts for the frequency analysis of high-throughput
+        biological data
+Version: 1.0.1
+Date: 2014-07-15
+Author: c(person("Dougie", "Murray", role = c("aut", "cre"),
+  	     email = "mabawsa@gmail.com"),
+	      person("Cornelia", "Amariei", role = "aut"),
+		     email = "cornelia.amariei@gmail.com"))
+Maintainer: Dougie Murray <mabawsa@gmail.com>
+Description: Oscillations play a significant role in biological systems, 
+  with many examples in the fast, ultradian, circadian, circalunar and 
+  yearly time domains. However, determining periodicity in such data can 
+  be problematic. There are a number of computational methods to identify 
+  the periodic components in large datasets, such as signal-to-noise 
+  based Fourier decomposition, Fisher's g-test and autocorrelation. 
+  However, the available methods assume a sinusoidal model and do not 
+  attempt to quantify the waveform shape and the presence of multiple periodicities, 
+  which provide vital clues in determining the underlying dynamics. 
+  Here, we developed a Fourier based measure that generates a de-noised 
+  waveform from multiple significant frequencies. This waveform is then 
+  correlated with the raw data from the respiratory oscillation found in yeast, 
+  to provide oscillation statistics including waveform metrics and multi-periods. 
+  The method is compared and contrasted to commonly used statistics. 
+  Moreover, we show the utility of the program in the analysis of noisy datasets
+  and other high-throughput analyses, such as metabolomics and flow cytometry, respectively.
+License: GPL (>= 2)
+LazyData: true
+Depends: R (>= 3.0.0), GeneCycle, matrixStats, foreach, doSNOW, e1071
+URL: http://oscillat.iab.keio.ac.jp/index.php/software/75-waveform
+Packaged: 2014-07-22 10:24:03 UTC; dougie
